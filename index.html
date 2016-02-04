@@ -18,6 +18,14 @@
 		
 		var minCamSize = false
 	    var maxCamSize = false
+	    
+	    var colors = []
+		colors["blue"] = "#216EA6"
+		colors["silver"] = "#E9E4E0"
+		colors["purple"] = "#B15DA8"
+		colors["green"] = "#47954A"
+		colors["red"] = "#CD4843"
+		colors["gold"] = "#E4B05D"
 		
 		//Import Data
 		$.getJSON("cams.json", function(result){			
@@ -36,7 +44,7 @@
 	        	html += "<td class='manufacturerCell'>"+cam["manufacturer"]+"</td>"
 	        	html += "<td class='nameCell'>"+cam["name"]+"</td>"
 	        	html += "<td class='variantCell'>"+cam["variant"]+"</td>"
-	        	html += '<td class="rangeCell" data-order='+cam["range"][0]+'-'+cam["range"][1]+' data-search='+cam["range"][0]+'-'+cam["range"][1]+'><div class="fistSizeDiv"></div><div class="mainSizeDiv"></div><div class="lastSizeDiv"></div></td>'      	
+	        	html += '<td class="rangeCell" data-order='+cam["range"][0]+'-'+cam["range"][1]+' data-search='+cam["range"][0]+'-'+cam["range"][1]+'><div class="fistSizeDiv"></div><div style="background-color:'+colors[cam["color"]]+';" class="mainSizeDiv"></div><div class="lastSizeDiv"></div></td>'      	
 	        	html += "<td class='priceCell'>"+cam["price"]["USD"]+"</td>"
 	        	html += "<td class='weightCell'>"+cam["weight"]+"g</td>"
 	        	html += "<td class='strengthCell'>"+cam["strength"]+"kn</td>"
