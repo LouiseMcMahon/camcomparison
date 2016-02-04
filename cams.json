@@ -1,4 +1,3 @@
-
 [ 
 	{
 		"manufacturer" : "DMM",
@@ -13,7 +12,9 @@
 		},
 		"offset" : "false",
 		"weight" : 75,
-		"color" : "blue"			
+		"color" : "blue",
+		"singleStem" : "true",
+		"singleAxle"	: "false"		
 	},
 	{
 		"manufacturer" : "DMM",
@@ -28,7 +29,9 @@
 		},
 		"offset" : "false",
 		"weight" : 85,
-		"color" : "silver"			
+		"color" : "silver",
+		"singleStem" : "true",
+		"singleAxle"	: "false"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -43,7 +46,9 @@
 		},
 		"offset" : "false",
 		"weight" : 97,
-		"color" : "purple"			
+		"color" : "purple",
+		"singleStem" : "true",
+		"singleAxle"	: "false"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -58,7 +63,9 @@
 		},
 		"offset" : "false",
 		"weight" : 106,
-		"color" : "green"			
+		"color" : "green",
+		"singleStem" : "true",
+		"singleAxle"	: "false"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -73,7 +80,9 @@
 		},
 		"offset" : "false",
 		"weight" : 119,
-		"color" : "red"			
+		"color" : "red",
+		"singleStem" : "true",
+		"singleAxle"	: "false"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -88,7 +97,9 @@
 		},
 		"offset" : "false",
 		"weight" : 148,
-		"color" : "gold"			
+		"color" : "gold",
+		"singleStem" : "true",
+		"singleAxle"	: "false"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -103,7 +114,9 @@
 		},
 		"offset" : "false",
 		"weight" : 195,
-		"color" : "blue"			
+		"color" : "blue",
+		"singleStem" : "true",
+		"singleAxle"	: "false"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -118,7 +131,9 @@
 		},
 		"offset" : "false",
 		"weight" : 195,
-		"color" : "silver"			
+		"color" : "silver",
+		"singleStem" : "true",
+		"singleAxle"	: "false"			
 	}
 ]
 
