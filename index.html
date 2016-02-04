@@ -46,12 +46,10 @@
 	        });
 	    
 		    //setup data table
-		    //$('#camTable').DataTable();
+		    $('#camTable').DataTable();
+		   
 		    
-		    
-		    //building range collum
-		    
-		    
+		    //building range collum   
 		    var totalCamRange = maxCamSize - minCamSize	    
 		    var rangeCollWidth = 100
 		    var camRangeMMPerPx =  rangeCollWidth/totalCamRange
@@ -69,7 +67,16 @@
 		    	$( this ).find('.lastSizeDiv:first').width(lastSizeDivSize+"%")
 		    	$( this ).find('.mainSizeDiv:first').width(mainSizeDivSize+"%")
 		    });	
-	    
+		    
+		    //building range scale
+		    var rangeScaleSectionSize = totalCamRange/10
+		    for(var i = 1; i < 11; i++) {
+		    	var scaleNumber = Math.round((rangeScaleSectionSize*i)+minCamSize)
+		    	var html = "<div class='scaleSection'>"+scaleNumber+"mm</div>"
+		    	
+		    	$("#rangeScale").append(html);
+		    }
+		    	
 		});	
 		
 	} );
@@ -81,14 +88,17 @@
                 <th>Manufacturer</th>
                 <th>Name</th>
                 <th>Size</th>
-                <th id="rangeHeader" width="100%">Range</th>
+                <th id="rangeHeader" width="100%"><span>Range</span>
+                
+                	<div id="rangeScale"></div>
+                
+                </th>
                 <th>Price</th>
                 <th>Weight</th>
                 <th>Strength</th>
             </tr>
         </thead>
-        <tbody>                   
-        </tbody>
+        <tbody></tbody>
     </table>
 
 </body>

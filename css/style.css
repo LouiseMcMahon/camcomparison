@@ -4,6 +4,10 @@
 }
 
 .mainSizeDiv{
-	background-color:red;
-	
+	background-color:red;	
+}
+.scaleSection{
+	width:10%;
+	float:left;
+	text-align:left;
 }
