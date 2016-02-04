@@ -1,0 +1,125 @@
+
+[ 
+	{
+		"manufacturer" : "DMM",
+		"name" : "Dragon",
+		"variant" : "00",
+		"range" : [13.6,22.5],
+		"strength" : 9,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 75,
+		"color" : "blue"			
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Dragon",
+		"variant" : "0",
+		"range" : [16,26.7],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 85,
+		"color" : "silver"			
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Dragon",
+		"variant" : "1",
+		"range" : [20,33],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 97,
+		"color" : "purple"			
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Dragon",
+		"variant" : "2",
+		"range" : [24,41],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 106,
+		"color" : "green"			
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Dragon",
+		"variant" : "3",
+		"range" : [29,50],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 119,
+		"color" : "red"			
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Dragon",
+		"variant" : "4",
+		"range" : [38,64],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 148,
+		"color" : "gold"			
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Dragon",
+		"variant" : "5",
+		"range" : [50,85],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 195,
+		"color" : "blue"			
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Dragon",
+		"variant" : "6",
+		"range" : [68,114],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 195,
+		"color" : "silver"			
+	}
+]
+
+

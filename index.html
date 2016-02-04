@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cam Comparison</title>
+
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>  
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.js"></script>
+
+</head>
+<body>
+
+<script>
+	$(document).ready(function() {
+		
+		var minCamSize = false
+	    var maxCamSize = false
+		
+		//Import Data
+		$.getJSON("cams.json", function(result){			
+	        $.each(result, function(i, cam){
+	        	
+	        	if (minCamSize == false || cam["range"][0] < minCamSize){
+	        		minCamSize = cam["range"][0]
+	        	}
+	        	
+	        	if (maxCamSize == false || maxCamSize < cam["range"][1]){
+	        		maxCamSize = cam["range"][1]
+	        	}
+	        	
+	        	var html = ""	        	
+	        	html += "<tr>"
+	        	html += "<td class='manufacturerCell'>"+cam["manufacturer"]+"</td>"
+	        	html += "<td class='nameCell'>"+cam["name"]+"</td>"
+	        	html += "<td class='variantCell'>"+cam["variant"]+"</td>"
+	        	html += '<td class="rangeCell" data-order='+cam["range"][0]+'-'+cam["range"][1]+' data-search='+cam["range"][0]+'-'+cam["range"][1]+'><div class="fistSizeDiv"></div><div class="mainSizeDiv"></div><div class="lastSizeDiv"></div></td>'      	
+	        	html += "<td class='priceCell'>"+cam["price"]["USD"]+"</td>"
+	        	html += "<td class='weightCell'>"+cam["weight"]+"g</td>"
+	        	html += "<td class='strengthCell'>"+cam["strength"]+"kn</td>"
+	        	html += "</tr>"
+	        	
+	            $("#camTable tbody").append(html);
+	        });
+	    
+		    //setup data table
+		    //$('#camTable').DataTable();
+		    
+		    
+		    //building range collum
+		    
+		    
+		    var totalCamRange = maxCamSize - minCamSize	    
+		    var rangeCollWidth = $( rangeHeader ).width();
+		    var camRangeMMPerPx =  rangeCollWidth/totalCamRange
+		    
+		    
+		    $( ".rangeCell" ).each(function( index ) {
+		    	
+		    	var camRange = $( this ).attr( 'data-order' ).split("-")
+		    	
+		    	var fistSizeDivSize = (camRange[0]-minCamSize)*camRangeMMPerPx
+		    	var lastSizeDivSize = (maxCamSize-camRange[1])*camRangeMMPerPx
+		    	var mainSizeDivSize = rangeCollWidth-(fistSizeDivSize+lastSizeDivSize)
+		    	
+		    	
+		    	$( this ).find('.fistSizeDiv:first').width(fistSizeDivSize)
+		    	$( this ).find('.lastSizeDiv:first').width(lastSizeDivSize)
+		    	$( this ).find('.mainSizeDiv:first').width(mainSizeDivSize)
+		    });	
+	    
+		});	
+		
+	} );
+</script>
+
+<table id="camTable" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Manufacturer</th>
+                <th>Name</th>
+                <th>Size</th>
+                <th id="rangeHeader" width="100%">Range</th>
+                <th>Price</th>
+                <th>Weight</th>
+                <th>Strength</th>
+            </tr>
+        </thead>
+        <tbody>                   
+        </tbody>
+    </table>
+
+</body>
+</html>
