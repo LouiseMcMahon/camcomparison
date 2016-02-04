@@ -130,8 +130,144 @@
 			"EUR" : 0
 		},
 		"offset" : "false",
-		"weight" : 195,
+		"weight" : 276,
 		"color" : "silver",
+		"singleStem" : "true",
+		"singleAxle"	: "false"			
+	},
+	{
+		"manufacturer" : "Wild Country",
+		"name" : "Friend",
+		"variant" : "0.5",
+		"range" : [20.6,34.5],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 98,
+		"color" : "purple",
+		"singleStem" : "true",
+		"singleAxle"	: "true"			
+	},
+	{
+		"manufacturer" : "Wild Country",
+		"name" : "Friend",
+		"variant" : "0.75",
+		"range" : [25.8,43],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 115,
+		"color" : "green",
+		"singleStem" : "true",
+		"singleAxle"	: "true"			
+	},
+	{
+		"manufacturer" : "Wild Country",
+		"name" : "Friend",
+		"variant" : "1",
+		"range" : [31.7,53.6],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 134,
+		"color" : "red",
+		"singleStem" : "true",
+		"singleAxle"	: "true"			
+	},
+	{
+		"manufacturer" : "Wild Country",
+		"name" : "Friend",
+		"variant" : "2",
+		"range" : [41.5,69.3],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 156,
+		"color" : "gold",
+		"singleStem" : "true",
+		"singleAxle"	: "true"			
+	},
+	{
+		"manufacturer" : "Wild Country",
+		"name" : "Friend",
+		"variant" : "3",
+		"range" : [52.7,88.0],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 202,
+		"color" : "blue",
+		"singleStem" : "true",
+		"singleAxle"	: "true"			
+	},
+	{
+		"manufacturer" : "Wild Country",
+		"name" : "Friend",
+		"variant" : "4",
+		"range" : [66.8,112.1],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 283,
+		"color" : "gold",
+		"singleStem" : "true",
+		"singleAxle"	: "true"			
+	},
+	{
+		"manufacturer" : "Wild Country",
+		"name" : "Technical Friend",
+		"variant" : "5",
+		"range" : [84,138],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 339,
+		"color" : "red",
+		"singleStem" : "true",
+		"singleAxle"	: "true"			
+	},
+	{
+		"manufacturer" : "Wild Country",
+		"name" : "Technical Friend",
+		"variant" : "6",
+		"range" : [118,194],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "false",
+		"weight" : 533,
+		"color" : "green",
 		"singleStem" : "true",
 		"singleAxle"	: "false"			
 	}

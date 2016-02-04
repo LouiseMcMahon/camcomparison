@@ -1,9 +1,9 @@
 .rangeCell Div{
-	height:10px;
-	float:left;
+	height:20px;
+	float:left;	
 }
-
 .mainSizeDiv{
+	text-align:center;
 }
 .scaleSection{
 	width:10%;
