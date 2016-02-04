@@ -53,7 +53,7 @@
 		    
 		    
 		    var totalCamRange = maxCamSize - minCamSize	    
-		    var rangeCollWidth = $( rangeHeader ).width();
+		    var rangeCollWidth = 100
 		    var camRangeMMPerPx =  rangeCollWidth/totalCamRange
 		    
 		    
@@ -63,12 +63,11 @@
 		    	
 		    	var fistSizeDivSize = (camRange[0]-minCamSize)*camRangeMMPerPx
 		    	var lastSizeDivSize = (maxCamSize-camRange[1])*camRangeMMPerPx
-		    	var mainSizeDivSize = rangeCollWidth-(fistSizeDivSize+lastSizeDivSize)
+		    	var mainSizeDivSize = rangeCollWidth-(fistSizeDivSize+lastSizeDivSize)		    	
 		    	
-		    	
-		    	$( this ).find('.fistSizeDiv:first').width(fistSizeDivSize)
-		    	$( this ).find('.lastSizeDiv:first').width(lastSizeDivSize)
-		    	$( this ).find('.mainSizeDiv:first').width(mainSizeDivSize)
+		    	$( this ).find('.fistSizeDiv:first').width(fistSizeDivSize+"%")
+		    	$( this ).find('.lastSizeDiv:first').width(lastSizeDivSize+"%")
+		    	$( this ).find('.mainSizeDiv:first').width(mainSizeDivSize+"%")
 		    });	
 	    
 		});	
