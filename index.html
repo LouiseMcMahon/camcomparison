@@ -51,10 +51,18 @@
 		
 		var minCamSize = false
 	    var maxCamSize = false
+	    
+	    var colors = []
+		colors["blue"] = "#216EA6"
+		colors["silver"] = "#E9E4E0"
+		colors["purple"] = "#B15DA8"
+		colors["green"] = "#47954A"
+		colors["red"] = "#CD4843"
+		colors["gold"] = "#E4B05D"
 		
 		//get min and max cam sizes		
-		$( "#camTable tbody .rangeCell" ).each(function( index ) {	    	
-	    	var camRange = $( this ).attr( 'data-order' ).split("-")	    	
+		$( "#camTable tr td:nth-child(4)" ).each(function( index ) {
+	    	var camRange = $( this ).text().split("-")	    	
 	    	camRange[0] = parseFloat(camRange[0])
 	    	camRange[1] = parseFloat(camRange[1])
 	    	
@@ -63,7 +71,7 @@
 	       	}	        	
 	      	if (maxCamSize == false || maxCamSize < camRange[1]){
 	       		maxCamSize = camRange[1]
-	    	}	        	
+	    	}	      	
 		});
 				
 		//calculate %   
@@ -71,20 +79,35 @@
 	    var rangeCollWidth = 100
 	    var camRangeMMPerPx =  rangeCollWidth/totalCamRange
 	    
-	    //crete range graph
-	    $( "#camTable tbody .rangeCell" ).each(function( index ) {
-	    	
-	    	var camRange = $( this ).attr( 'data-order' ).split("-")
+	    var camTable = $('#camTable').DataTable();
+		
+	    //create range graph
+	    camTable.rows().eq(0).each( function ( index ) {
+	        var row = camTable.row( index );
+	        
+	        var data = row.data();
+	        var rangeTdNode = $(row.node()).children('td:nth-child(4)')    	
+
+	    	var rangeText = data[3]
+	    	var camRange = data[3].split("-")
 	    	camRange[0] = parseFloat(camRange[0])
 	    	camRange[1] = parseFloat(camRange[1])
+	    	rangeTdNode.text("")
+	    	html = ""
+	    	html +="<div class='rangeCell fistSizeDiv'> </div>"
+	    	html +="<div class='rangeCell mainSizeDiv' style='background-color:"+colors[data[11]]+"' title='"+rangeText+"'><span>"+rangeText+"</span></div>"
+	    	html +="<div class='rangeCell lastSizeDiv'> </div>"	    	
+	    	rangeTdNode.attr("data-search", rangeText);
+	    	rangeTdNode.attr("data-order", rangeText); 
+	    	rangeTdNode.append(html)
 	    	
 	    	var fistSizeDivSize = (camRange[0]-minCamSize)*camRangeMMPerPx
 	    	var lastSizeDivSize = (maxCamSize-camRange[1])*camRangeMMPerPx
 	    	var mainSizeDivSize = rangeCollWidth-(fistSizeDivSize+lastSizeDivSize)		    	
 	    	
-	    	$( this ).find('.fistSizeDiv:first').width(fistSizeDivSize+"%")
-	    	$( this ).find('.lastSizeDiv:first').width(lastSizeDivSize+"%")
-	    	$( this ).find('.mainSizeDiv:first').width(mainSizeDivSize+"%")
+	    	rangeTdNode.find('.fistSizeDiv:first').width(fistSizeDivSize+"%")
+	    	rangeTdNode.find('.lastSizeDiv:first').width(lastSizeDivSize+"%")
+	    	rangeTdNode.find('.mainSizeDiv:first').width(mainSizeDivSize+"%")
 	    });	
 	    
 	    //building range scale
@@ -108,7 +131,6 @@
 	    $('.mainSizeDiv').textfill({
 	    	minFontPixels : 1,
 	    	changeLineHeight : true,
-	    	debug: true,
 	        fail: function(failedDiv) {
 	        	$(failedDiv).children('span').hide()
 	        }
@@ -172,6 +194,43 @@
 		
 	    
 	}
+	
+	function importData(){
+		
+		var currencySymbols = []
+		currencySymbols["USD"] = "$"
+		currencySymbols["GBP"] = "£"
+		currencySymbols["EUR"] = "€"
+		
+		var camTable = $('#camTable').DataTable();
+		camTable.clear();
+		
+		var selectedCurrency = $('#currencyInput').val()
+		
+		//Import Data and create base html table
+		$.getJSON("cams.json", function(result){			
+	        $.each(result, function(i, cam){
+	        	row = camTable.row.add([
+                 	cam["manufacturer"],
+                   	cam["name"],
+                   	cam["variant"],
+                   	cam["range"][0]+'-'+cam["range"][1],
+                   	currencySymbols[selectedCurrency]+cam["price"][selectedCurrency],
+                   	cam["weight"]+"g",
+                   	cam["strength"]+"kN",
+                   	cam["stemNumber"],
+                   	cam["axleNumber"],
+                   	cam["extendableSling"],
+					cam["offset"],
+                 	cam["color"]
+                   ])
+	        });
+	        
+	        camTable.draw()
+	    
+		});
+	}
+
 
 	$(document).ready(function() {
 		
@@ -210,10 +269,9 @@
 		        lessThanPrice = parseInt(lessThanPrice)
 		        if(!$.isNumeric( lessThanPrice )){
 		        	return true;
-		        }
-		        data[4]
+		        }		        
 		    	
-		    	if (data[4] <= lessThanPrice){
+		    	if (data[4].replace(/\D/g,'') <= lessThanPrice){
 		    		return true;
 		    	}
 		    	return false;			        
@@ -232,9 +290,8 @@
 		        if(!$.isNumeric( lessThanWeight )){
 		        	return true;
 		        }
-		        data[5]
 		    	
-		    	if (data[5] <= lessThanWeight){
+		    	if (data[5].replace(/\D/g,'') <= lessThanWeight){
 		    		return true;
 		    	}
 		    	return false;			        
@@ -253,175 +310,145 @@
 		        if(!$.isNumeric( greaterThanStrength )){
 		        	return true;
 		        }
-		        data[6]
 		    	
-		    	if (data[6] >= greaterThanStrength){
+		    	if (data[6].replace(/\D/g,'') >= greaterThanStrength){
 		    		return true;
 		    	}
 		    	return false;			        
 	    	}
 		);
-	    
-	    var colors = []
-		colors["blue"] = "#216EA6"
-		colors["silver"] = "#E9E4E0"
-		colors["purple"] = "#B15DA8"
-		colors["green"] = "#47954A"
-		colors["red"] = "#CD4843"
-		colors["gold"] = "#E4B05D"
 		
-		//Import Data and create base html table
-		$.getJSON("cams.json", function(result){			
-	        $.each(result, function(i, cam){
-	        	
-	        	var html = ""	        	
-	        	html += "<tr>"
-	        	html += "<td class='manufacturerCell'>"+cam["manufacturer"]+"</td>"
-	        	html += "<td class='modelCell'>"+cam["name"]+"</td>"
-	        	html += "<td class='nameCell'>"+cam["variant"]+"</td>"
-	        	html += '<td class="rangeCell" data-order='+cam["range"][0]+'-'+cam["range"][1]+' data-search='+cam["range"][0]+'-'+cam["range"][1]+'><div class="fistSizeDiv"></div><div style="background-color:'+colors[cam["color"]]+';" title="'+cam["range"][0]+' - '+cam["range"][1]+'" class="mainSizeDiv"><span>'+cam["range"][0]+' - '+cam["range"][1]+'</span></div><div class="lastSizeDiv"></div></td>'      	
-	        	html += "<td class='priceCell' data-order='"+cam["price"]["USD"]+"' data-search='"+cam["price"]["USD"]+"'>$"+cam["price"]["USD"]+"</td>"
-	        	html += "<td class='weightCell' data-order='"+cam["weight"]+"' data-search='"+cam["weight"]+"'>"+cam["weight"]+"g</td>"
-	        	html += "<td class='strengthCell' data-order='"+cam["strength"]+"' data-search='"+cam["strength"]+"'>"+cam["strength"]+"kN</td>"
-	        	html += "<td class='stemNumberCell'>"+cam["stemNumber"]+"</td>"
-	        	html += "<td class='axleNumberCell'>"+cam["axleNumber"]+"</td>"
-	        	html += "<td class='extendableSling'>"+cam["extendableSling"]+"</td>"
-	        	html += "<td class='offset'>"+cam["offset"]+"</td>"
-	        	html += "</tr>"
-	        	
-	            $("#camTable tbody").append(html);
-	        });
+		//initialse data table
+	   	$('#camTable').DataTable( {
+	        "bFilter" : true,
+	        "bPaginate" : false,
+	        "sDom" : 'tp',
+	        "columns": [
+ 	                { orderData: [ 0, 1 , 2]},
+ 	                { orderData: [ 1, 0 , 2]},
+ 	                { orderData: [ 2, 1 , 0]},
+ 	                { "type": "size-range"},
+ 	                { },
+ 	                { "visible": false },
+ 	                { "visible": false },
+ 	                { "visible": false },
+ 	                { "visible": false },
+ 	                { "visible": false },
+ 	                { "visible": false },
+ 	               	{ "visible": false }
+    		]
+	    });
+    
+	    importData();
+	
 	    
-		    //initialse data table
-		   	$('#camTable').DataTable( {
-		        "bFilter" : true,
-		        "bPaginate" : false,
-		        "sDom" : 'tp',
-		        "columns": [
-  	                { orderData: [ 0, 1 , 2]},
-  	                { orderData: [ 1, 0 , 2]},
-  	                { orderData: [ 2, 1 , 0]},
-  	                { "type": "size-range"},
-  	                { },
-  	                { "visible": false },
-  	                { "visible": false },
-  	                { "visible": false },
-  	                { "visible": false },
-  	                { "visible": false },
-  	                { "visible": false }
-	    		]
-		    });
-		   
-		    //build range collum for first time
-		    buildRangeCollum()
-		    fillAdvancedSearchOptions()
-		    
-		    //event defenitions		    
-	   		var camTable = $('#camTable').DataTable();
-	   		camTable.on( 'draw', function () {
-		    	buildRangeCollum()
-		    	fillAdvancedSearchOptions()
-		    } );
-	   		
-	   		$('#manufacturerSearchOption').on( 'change', function () {
-				camTable
-				.column(0)
-				.search( $(this).val() )
-				camTable
-				.column(1)
-				.search("")
-				camTable
-				.column(2)
-				.search("")				
-				
-	            camTable.draw();
-	        } );
-	   		
-	   		$('#modelSearchOption').on( 'change', function () {
-				camTable
-				.column(1)
-				.search( $(this).val() )				
-				camTable
-				.column(2)
-				.search("")
-	            
-				camTable.draw();
-	        } );
-	   		
-	   		$('#nameSearchOption').on( 'change', function () {
-				camTable
-				.column(2)
-				.search( $(this).val() )
-	            .draw();
-	        } );		    
-	   			   		
-		    
-	   		$('#rangeInput').keyup( function() {
-	   			camTable.draw();
-	   	    } );
-	   		
-	   		$('#priceInput').keyup( function() {
-	   			camTable.draw();
-	   	    } );
-	   		
-	   		$('#weightInput').keyup( function() {
-	   			camTable.draw();
-	   	    } );
-	   		
-	   		$('#strengthInput').keyup( function() {
-	   			camTable.draw();
-	   	    } );
-	   		
-	   		$('#stemCountInput').on( 'change', function () {
-				camTable
-				.column(7)
-				.search( $(this).val() )
-	            .draw();
-	        } );
-	   		
-	   		$('#axleCountInput').on( 'change', function () {
-				camTable
-				.column(8)
-				.search( $(this).val() )
-	            .draw();
-	        } );
-	   		
-	   		$('#extendableSlingInput').on( 'change', function () {
-				camTable
-				.column(9)
-				.search( $(this).val() )
-	            .draw();
-	        } );
-	   		
-	   		$('#offsetInput').on( 'change', function () {
-				camTable
-				.column(10)
-				.search( $(this).val() )
-	            .draw();
-	        } );
-	   		
-	   		$('#showExtraData').on( 'click', function () {
-	   			
-	   			console.log(camTable.columns(5).visible()[0])
-	   			if (camTable.columns(5).visible()[0]){
-	   				camTable
-					.columns([5,6,7,8,9,10])
-					.visible(false)
-					$('#showExtraData').text("Show Extra Data")
-	   			}
-	   			else{
-	   				camTable
-					.columns([5,6,7,8,9,10])
-					.visible(true)
-					$('#showExtraData').text("Hide Extra Data")
-	   			}
-	   			buildRangeCollum()
-				
-	        } );
-	   		
-		});	    
+	    //event defenitions		    
+   		var camTable = $('#camTable').DataTable();
+   		camTable.on( 'draw', function () {
+	    	buildRangeCollum()
+	    	fillAdvancedSearchOptions()
+	    } );
+   		
+   		$('#manufacturerSearchOption').on( 'change', function () {
+			camTable
+			.column(0)
+			.search( $(this).val() )
+			camTable
+			.column(1)
+			.search("")
+			camTable
+			.column(2)
+			.search("")				
+			
+            camTable.draw();
+        } );
+   		
+   		$('#modelSearchOption').on( 'change', function () {
+			camTable
+			.column(1)
+			.search( $(this).val() )				
+			camTable
+			.column(2)
+			.search("")
+            
+			camTable.draw();
+        } );
+   		
+   		$('#nameSearchOption').on( 'change', function () {
+			camTable
+			.column(2)
+			.search( $(this).val() )
+            .draw();
+        } );		    
+   			   		
 	    
-		
+   		$('#rangeInput').keyup( function() {
+   			camTable.draw();
+   	    } );
+   		
+   		$('#priceInput').keyup( function() {
+   			camTable.draw();
+   	    } );
+   		
+   		$('#weightInput').keyup( function() {
+   			camTable.draw();
+   	    } );
+   		
+   		$('#strengthInput').keyup( function() {
+   			camTable.draw();
+   	    } );
+   		
+   		$('#stemCountInput').on( 'change', function () {
+			camTable
+			.column(7)
+			.search( $(this).val() )
+            .draw();
+        } );
+   		
+   		$('#axleCountInput').on( 'change', function () {
+			camTable
+			.column(8)
+			.search( $(this).val() )
+            .draw();
+        } );
+   		
+   		$('#extendableSlingInput').on( 'change', function () {
+			camTable
+			.column(9)
+			.search( $(this).val() )
+            .draw();
+        } );
+   		
+   		$('#offsetInput').on( 'change', function () {
+			camTable
+			.column(10)
+			.search( $(this).val() )
+            .draw();
+        } );
+   		
+   		$('#showExtraData').on( 'click', function () {
+   			
+   			console.log(camTable.columns(5).visible()[0])
+   			if (camTable.columns(5).visible()[0]){
+   				camTable
+				.columns([5,6,7,8,9,10])
+				.visible(false)
+				$('#showExtraData').text("Show Extra Data")
+   			}
+   			else{
+   				camTable
+				.columns([5,6,7,8,9,10])
+				.visible(true)
+				$('#showExtraData').text("Hide Extra Data")
+   			}
+   			buildRangeCollum()
+			
+        } );
+   		
+   		$('#currencyInput').on( 'change', function () {
+   			importData()
+        } );
+   		
 	} );
 </script>
 
@@ -492,6 +519,12 @@
 		<option value="">All</option>
 		<option value="Yes">Yes</option>
 		<option value="No">No</option>
+	</select>
+	
+	<select id="currencyInput">
+		<option value="USD">USD</option>
+		<option value="GBP">GBP</option>
+		<option value="EUR">EUR</option>
 	</select>
 	
 	<div id="showExtraData">Show Extra Data</div>
