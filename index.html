@@ -57,6 +57,10 @@
 	} );
 </script>
 
+<div id="header">
+	<h1>Cam Comparison</h1>
+</div>
+
 <table id="camTable" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
@@ -117,6 +121,17 @@
 		<label>Price is less than:</label>
 		<input id="priceInput" ></input>
 	</div>
+	<div class="inputContainer">
+		<label>Currency to display:</label>
+		<select id="currencyInput">
+			<option value="USD">USD</option>
+			<option value="GBP">GBP</option>
+			<option value="EUR">EUR</option>
+		</select>
+	</div>	
+	<div class="inputContainer">
+		<div id="showExtraData">Show </br>Advanced Search</div>
+	</div>	
 	<div class="inputContainer" style="display: none;">
 		<label>Weight is less than:</label>
 		<input id="weightInput" ></input>
@@ -157,17 +172,7 @@
 			<option value="No">No</option>
 		</select>
 	</div>
-	<div class="inputContainer">
-		<label>Currency to display:</label>
-		<select id="currencyInput">
-			<option value="USD">USD</option>
-			<option value="GBP">GBP</option>
-			<option value="EUR">EUR</option>
-		</select>
-	</div>	
-	<div class="inputContainer">
-		<div id="showExtraData">Show </br>Advanced Search</div>
-	</div>
+	
 	
 </div>
 

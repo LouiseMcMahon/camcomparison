@@ -95,7 +95,7 @@ function buildRangeCollum() {
 	    	
 	    	$(".rangeScale").append(html);
 	    }
-	    $(".rangeScale").append("<div class='scaleSection'>"+maxCamSize+"mm</div>");
+	    $(".rangeScale").append("<div style='width:"+100/numberOfPointsOnScale+"%' class='scaleSection'>"+maxCamSize+"mm</div>");
     }
     
     //adding tooltips
