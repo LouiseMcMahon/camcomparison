@@ -45,6 +45,7 @@ function buildRangeCollum() {
         var rangeTdNode = $(row.node()).children('td:nth-child(4)')
     	rangeTdNode.children(".rangeCell").remove();
     	
+        //if not enough room for graph just show data
     	if($('.rangeHeader').width()>300){	    	    	
 	
 	    	var rangeText = data[3]
@@ -83,6 +84,7 @@ function buildRangeCollum() {
     //building range scale
     $(".scaleSection").remove();
     
+  //if not enough room dont create scale
     if($('.rangeHeader').width()>300){
 	    var numberOfPointsOnScale = 0
 	
