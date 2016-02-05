@@ -6,6 +6,10 @@ function defineEvents(){
 		fillAdvancedSearchOptions()
 	} );
 	
+	$( window ).resize(function() {
+		buildRangeCollum()
+	});
+	
 	$('#manufacturerSearchOption').on( 'change', function () {
 		camTable
 		.column(0)

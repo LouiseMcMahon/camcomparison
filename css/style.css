@@ -1,3 +1,11 @@
+/*Base*/
+body{
+	background-color:#333333;
+	color:white;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*Range Graph*/
 .rangeCell{
 	height:20px;
 	float:left;	
@@ -6,10 +14,11 @@
 	text-align:center;
 }
 .scaleSection{
-	width:10%;
 	float:left;
 	text-align:center;
 }
+
+/*Search */
 .inputContainer{
 	margin: 5px 10px;
 	float:left;
@@ -18,4 +27,26 @@
 }
 .inputContainer label{
 	display:block;
+}
+
+/*Table*/
+td{
+	width:auto;
+	white-space:nowrap;
+	padding:5px;
+}
+tr.even{
+	background-color:#2e2e2e;
+	
+}
+tr.odd{
+	
+}
+th{
+	width:auto;
+	padding:0px 10px;
+	white-space: nowrap;
+}
+th.rangeHeader{
+	white-space: normal;
 }

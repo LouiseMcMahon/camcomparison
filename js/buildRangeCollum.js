@@ -43,10 +43,17 @@ function buildRangeCollum() {
     	var camRange = data[3].split("-")
     	camRange[0] = parseFloat(camRange[0])
     	camRange[1] = parseFloat(camRange[1])
+    	
+    	if(data[11]=="silver"){
+    		textColor = "#2e2e2e"
+    	}
+    	else
+    		textColor = "inherit"
+    	
     	rangeTdNode.text("")
     	html = ""
     	html +="<div class='rangeCell fistSizeDiv'> </div>"
-    	html +="<div class='rangeCell mainSizeDiv' style='background-color:"+colors[data[11]]+"' title='"+rangeText+"'><span>"+rangeText+"</span></div>"
+    	html +="<div class='rangeCell mainSizeDiv' style='background-color:"+colors[data[11]]+";color:"+textColor+";' title='"+rangeText+"'><span>"+rangeText+"</span></div>"
     	html +="<div class='rangeCell lastSizeDiv'> </div>"	    	
     	rangeTdNode.attr("data-search", rangeText);
     	rangeTdNode.attr("data-order", rangeText); 
@@ -63,10 +70,15 @@ function buildRangeCollum() {
     
     //building range scale
     $(".scaleSection").remove();
-    var rangeScaleSectionSize = totalCamRange/10
-    for(var i = 0; i < 9; i++) {
+     
+    var numberOfPointsOnScale = 0
+
+    numberOfPointsOnScale = Math.ceil($('.rangeHeader').width()/100)
+    var rangeScaleSectionSize = totalCamRange/numberOfPointsOnScale   
+    
+    for(var i = 0; i < numberOfPointsOnScale-1; i++) {
     	var scaleNumber = Math.round((rangeScaleSectionSize*i)+minCamSize)
-    	var html = "<div class='scaleSection'>"+scaleNumber+"mm</div>"
+    	var html = "<div style='width:"+100/numberOfPointsOnScale+"%' class='scaleSection'>"+scaleNumber+"mm</div>"
     	
     	$(".rangeScale").append(html);
     }
