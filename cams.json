@@ -10,12 +10,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 75,
 		"color" : "blue",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "true"		
+		"extendableSling" : "Yes"		
 	},
 	{
 		"manufacturer" : "DMM",
@@ -28,12 +28,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 85,
 		"color" : "silver",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -46,12 +46,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 97,
 		"color" : "purple",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -64,12 +64,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 106,
 		"color" : "green",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -82,12 +82,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 119,
 		"color" : "red",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -100,12 +100,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 148,
 		"color" : "gold",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -118,12 +118,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 195,
 		"color" : "blue",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -136,12 +136,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 276,
 		"color" : "silver",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -154,12 +154,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 98,
 		"color" : "purple",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -172,12 +172,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 115,
 		"color" : "green",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -190,12 +190,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 134,
 		"color" : "red",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -208,12 +208,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 156,
 		"color" : "gold",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -226,12 +226,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 202,
 		"color" : "blue",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -244,12 +244,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 283,
 		"color" : "gold",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "true"			
+		"extendableSling" : "Yes"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -262,12 +262,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 339,
 		"color" : "red",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "false"			
+		"extendableSling" : "no"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -280,12 +280,12 @@
 			"GBP" : 0,
 			"EUR" : 0
 		},
-		"offset" : "false",
+		"offset" : "no",
 		"weight" : 533,
 		"color" : "green",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "false"			
+		"extendableSling" : "no"			
 	}
 ]
 
