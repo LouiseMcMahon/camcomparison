@@ -48,7 +48,6 @@
  	               	{ "visible": false }
     		]
 	    });
-	   	var camTable = $('#camTable').DataTable();
     
 	    importData();
 	    
@@ -98,43 +97,78 @@
 </table>
 
 <div id="advancedSearch">
-
-	<select id="manufacturerSearchOption"></select>
-	<select id="modelSearchOption"></select>
-	<select id="nameSearchOption"></select>
-	<input id="rangeInput" ></input>
-	<input id="priceInput" ></input>
-	<input id="weightInput" ></input>
-	<input id="strengthInput" ></input>
-	<select id="stemCountInput">
-		<option value="">All</option>
-		<option value="1">1</option>
-		<option value="2">2</option>
-	</select>
-	<select id="axleCountInput">
-		<option value="">All</option>
-		<option value="1">1</option>
-		<option value="2">2</option>
-	</select>
-	<select id="extendableSlingInput">
-		<option value="">All</option>
-		<option value="Yes">Yes</option>
-		<option value="No">No</option>
-	</select>
-	<select id="offsetInput">
-		<option value="">All</option>
-		<option value="Yes">Yes</option>
-		<option value="No">No</option>
-	</select>
+	<div class="inputContainer">
+		<label>Manufacturer:</label>
+		<select id="manufacturerSearchOption"></select>
+	</div>
+	<div class="inputContainer">
+		<label>Model:</label>
+		<select id="modelSearchOption"></select>
+	</div>
+	<div class="inputContainer">
+		<label>Name:</label>
+		<select id="nameSearchOption"></select>
+	</div>
+	<div class="inputContainer">
+		<label>Range contains (mm):</label>
+		<input id="rangeInput" ></input>
+	</div>
+	<div class="inputContainer">
+		<label>Price is less than:</label>
+		<input id="priceInput" ></input>
+	</div>
+	<div class="inputContainer">
+		<label>Weight is less than:</label>
+		<input id="weightInput" ></input>
+	</div>
+	<div class="inputContainer">
+		<label>Strength is greater than:</label>
+		<input id="strengthInput" ></input>
+	</div>
+	<div class="inputContainer">
+		<label>Number of stems:</label>
+		<select id="stemCountInput">
+			<option value="">All</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</select>
+	</div>
+	<div class="inputContainer">
+		<label>Number of axles:</label>
+		<select id="axleCountInput">
+			<option value="">All</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</select>
+	</div>	
+	<div class="inputContainer">
+		<label>Sling is extendable:</label>
+		<select id="extendableSlingInput">
+			<option value="">All</option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+	</div>
+	<div class="inputContainer">
+		<label>Lobes are offset:</label>
+		<select id="offsetInput">
+			<option value="">All</option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+	</div>
+	<div class="inputContainer">
+		<label>Currency to display:</label>
+		<select id="currencyInput">
+			<option value="USD">USD</option>
+			<option value="GBP">GBP</option>
+			<option value="EUR">EUR</option>
+		</select>
+	</div>	
+	<div class="inputContainer">
+		<div id="showExtraData">Show Extra Data</div>
+	</div>
 	
-	<select id="currencyInput">
-		<option value="USD">USD</option>
-		<option value="GBP">GBP</option>
-		<option value="EUR">EUR</option>
-	</select>
-	
-	<div id="showExtraData">Show Extra Data</div>
-
 </div>
 
 </body>

@@ -10,3 +10,12 @@
 	float:left;
 	text-align:center;
 }
+.inputContainer{
+	margin: 5px 10px;
+	float:left;
+	width:auto;
+	height:40px;
+}
+.inputContainer label{
+	display:block;
+}
