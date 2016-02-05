@@ -38,16 +38,66 @@
 	    	b[0] = parseFloat(b[0])
 	    	b[1] = parseFloat(b[1])
 	    	
-	    	console.log(a) 
-	    	console.log(b) 
 	        return ((a[1] < b[1]) ? 1 : ((a[1] > b[1]) ? -1 : 0));
 	    }
 	} );
-
-	$(document).ready(function() {
+	
+	function buildRangeCollum() {
 		
 		var minCamSize = false
 	    var maxCamSize = false
+		
+		//get min and max cam sizes		
+		$( "#camTable tbody .rangeCell" ).each(function( index ) {	    	
+	    	var camRange = $( this ).attr( 'data-order' ).split("-")	    	
+	    	camRange[0] = parseFloat(camRange[0])
+	    	camRange[1] = parseFloat(camRange[1])
+	    	
+	    	if (minCamSize == false || camRange[0] < minCamSize){
+	       		minCamSize = camRange[0]
+	       	}	        	
+	      	if (maxCamSize == false || maxCamSize < camRange[1]){
+	       		maxCamSize = camRange[1]
+	    	}	        	
+		});
+		
+		console.log(minCamSize+" "+maxCamSize)
+		
+		//calculate %   
+	    var totalCamRange = maxCamSize - minCamSize	    
+	    var rangeCollWidth = 100
+	    var camRangeMMPerPx =  rangeCollWidth/totalCamRange
+	    
+	    //crete range graph
+	    $( "#camTable tbody .rangeCell" ).each(function( index ) {
+	    	
+	    	var camRange = $( this ).attr( 'data-order' ).split("-")
+	    	camRange[0] = parseFloat(camRange[0])
+	    	camRange[1] = parseFloat(camRange[1])
+	    	
+	    	var fistSizeDivSize = (camRange[0]-minCamSize)*camRangeMMPerPx
+	    	var lastSizeDivSize = (maxCamSize-camRange[1])*camRangeMMPerPx
+	    	var mainSizeDivSize = rangeCollWidth-(fistSizeDivSize+lastSizeDivSize)		    	
+	    	
+	    	$( this ).find('.fistSizeDiv:first').width(fistSizeDivSize+"%")
+	    	$( this ).find('.lastSizeDiv:first').width(lastSizeDivSize+"%")
+	    	$( this ).find('.mainSizeDiv:first').width(mainSizeDivSize+"%")
+	    });	
+	    
+	    //building range scale
+	    $(".scaleSection").remove();
+	    var rangeScaleSectionSize = totalCamRange/10
+	    for(var i = 0; i < 9; i++) {
+	    	var scaleNumber = Math.round((rangeScaleSectionSize*i)+minCamSize)
+	    	var html = "<div class='scaleSection'>"+scaleNumber+"mm</div>"
+	    	
+	    	$("#rangeScale").append(html);
+	    }
+	    $("#rangeScale").append("<div class='scaleSection'>"+maxCamSize+"mm</div>");
+		
+	}
+
+	$(document).ready(function() {
 	    
 	    var colors = []
 		colors["blue"] = "#216EA6"
@@ -60,14 +110,6 @@
 		//Import Data and create base html table
 		$.getJSON("cams.json", function(result){			
 	        $.each(result, function(i, cam){
-	        	
-	        	if (minCamSize == false || cam["range"][0] < minCamSize){
-	        		minCamSize = cam["range"][0]
-	        	}
-	        	
-	        	if (maxCamSize == false || maxCamSize < cam["range"][1]){
-	        		maxCamSize = cam["range"][1]
-	        	}
 	        	
 	        	var html = ""	        	
 	        	html += "<tr>"
@@ -85,9 +127,9 @@
 	    
 		    //initialse data table
 		    $('#camTable').DataTable( {
-		    	"paging":   false,
-		    	 "dom": '<"top">rt<"bottom"><"clear">',
-		    	 "columns": [
+		    	//"paging":   false,
+		    	//"dom": '<"top">rt<"bottom"><"clear">',
+		    	"columns": [
 		    	                { "orderDataType": "dom-text" },
 		    	                { "orderDataType": "dom-text" },
 		    	                { "orderDataType": "dom-text" },
@@ -95,40 +137,18 @@
 		    	                { "orderDataType": "dom-text" },
 		    	                { "orderDataType": "dom-text" },
 		    	                { "orderDataType": "dom-text" }
-		    	            ]
+		    	]
 		    });
 		   
 		    
-		    //building range collum   
-		    var totalCamRange = maxCamSize - minCamSize	    
-		    var rangeCollWidth = 100
-		    var camRangeMMPerPx =  rangeCollWidth/totalCamRange
+		    buildRangeCollum()	
 		    
-		    
-		    $( ".rangeCell" ).each(function( index ) {
+		    $('#camTable tbody').bind("DOMSubtreeModified",function(){
+		    	buildRangeCollum()
+	   		});
 		    	
-		    	var camRange = $( this ).attr( 'data-order' ).split("-")
-		    	
-		    	var fistSizeDivSize = (camRange[0]-minCamSize)*camRangeMMPerPx
-		    	var lastSizeDivSize = (maxCamSize-camRange[1])*camRangeMMPerPx
-		    	var mainSizeDivSize = rangeCollWidth-(fistSizeDivSize+lastSizeDivSize)		    	
-		    	
-		    	$( this ).find('.fistSizeDiv:first').width(fistSizeDivSize+"%")
-		    	$( this ).find('.lastSizeDiv:first').width(lastSizeDivSize+"%")
-		    	$( this ).find('.mainSizeDiv:first').width(mainSizeDivSize+"%")
-		    });	
-		    
-		    //building range scale
-		    var rangeScaleSectionSize = totalCamRange/10
-		    for(var i = 0; i < 9; i++) {
-		    	var scaleNumber = Math.round((rangeScaleSectionSize*i)+minCamSize)
-		    	var html = "<div class='scaleSection'>"+scaleNumber+"mm</div>"
-		    	
-		    	$("#rangeScale").append(html);
-		    }
-		    $("#rangeScale").append("<div class='scaleSection'>"+maxCamSize+"mm</div>");
-		    	
-		});	
+		});	    
+	    
 		
 	} );
 </script>
