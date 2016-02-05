@@ -13,8 +13,9 @@
 		"offset" : "false",
 		"weight" : 75,
 		"color" : "blue",
-		"singleStem" : "true",
-		"singleAxle"	: "false"		
+		"stemNumber" : 1,
+		"axleNumber" : 2,
+		"extendableSling" : "true"		
 	},
 	{
 		"manufacturer" : "DMM",
@@ -30,8 +31,9 @@
 		"offset" : "false",
 		"weight" : 85,
 		"color" : "silver",
-		"singleStem" : "true",
-		"singleAxle"	: "false"			
+		"stemNumber" : 1,
+		"axleNumber" : 2,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -47,8 +49,9 @@
 		"offset" : "false",
 		"weight" : 97,
 		"color" : "purple",
-		"singleStem" : "true",
-		"singleAxle"	: "false"			
+		"stemNumber" : 1,
+		"axleNumber" : 2,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -64,8 +67,9 @@
 		"offset" : "false",
 		"weight" : 106,
 		"color" : "green",
-		"singleStem" : "true",
-		"singleAxle"	: "false"			
+		"stemNumber" : 1,
+		"axleNumber" : 2,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -81,8 +85,9 @@
 		"offset" : "false",
 		"weight" : 119,
 		"color" : "red",
-		"singleStem" : "true",
-		"singleAxle"	: "false"			
+		"stemNumber" : 1,
+		"axleNumber" : 2,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -98,8 +103,9 @@
 		"offset" : "false",
 		"weight" : 148,
 		"color" : "gold",
-		"singleStem" : "true",
-		"singleAxle"	: "false"			
+		"stemNumber" : 1,
+		"axleNumber" : 2,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -115,8 +121,9 @@
 		"offset" : "false",
 		"weight" : 195,
 		"color" : "blue",
-		"singleStem" : "true",
-		"singleAxle"	: "false"			
+		"stemNumber" : 1,
+		"axleNumber" : 2,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "DMM",
@@ -132,8 +139,9 @@
 		"offset" : "false",
 		"weight" : 276,
 		"color" : "silver",
-		"singleStem" : "true",
-		"singleAxle"	: "false"			
+		"stemNumber" : 1,
+		"axleNumber" : 2,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -149,8 +157,9 @@
 		"offset" : "false",
 		"weight" : 98,
 		"color" : "purple",
-		"singleStem" : "true",
-		"singleAxle"	: "true"			
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -166,8 +175,9 @@
 		"offset" : "false",
 		"weight" : 115,
 		"color" : "green",
-		"singleStem" : "true",
-		"singleAxle"	: "true"			
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -183,8 +193,9 @@
 		"offset" : "false",
 		"weight" : 134,
 		"color" : "red",
-		"singleStem" : "true",
-		"singleAxle"	: "true"			
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -200,8 +211,9 @@
 		"offset" : "false",
 		"weight" : 156,
 		"color" : "gold",
-		"singleStem" : "true",
-		"singleAxle"	: "true"			
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -217,8 +229,9 @@
 		"offset" : "false",
 		"weight" : 202,
 		"color" : "blue",
-		"singleStem" : "true",
-		"singleAxle"	: "true"			
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -234,8 +247,9 @@
 		"offset" : "false",
 		"weight" : 283,
 		"color" : "gold",
-		"singleStem" : "true",
-		"singleAxle"	: "true"			
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "true"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -251,8 +265,9 @@
 		"offset" : "false",
 		"weight" : 339,
 		"color" : "red",
-		"singleStem" : "true",
-		"singleAxle"	: "true"			
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "false"			
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -268,8 +283,9 @@
 		"offset" : "false",
 		"weight" : 533,
 		"color" : "green",
-		"singleStem" : "true",
-		"singleAxle"	: "false"			
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "false"			
 	}
 ]
 
