@@ -10,10 +10,15 @@ function buildRangeCollum() {
 	colors["green"] = "#47954A"
 	colors["red"] = "#CD4843"
 	colors["gold"] = "#E4B05D"
+		
+	var camTable = $('#camTable').DataTable();
 	
 	//get min and max cam sizes		
-	$( "#camTable tr td:nth-child(4)" ).each(function( index ) {
-    	var camRange = $( this ).text().split("-")	    	
+	camTable.rows().eq(0).each( function ( index ) {
+    	var row = camTable.row( index );        
+        var data = row.data();
+        
+    	var camRange = data[3].split("-")	    	
     	camRange[0] = parseFloat(camRange[0])
     	camRange[1] = parseFloat(camRange[1])
     	
@@ -30,59 +35,68 @@ function buildRangeCollum() {
     var rangeCollWidth = 100
     var camRangeMMPerPx =  rangeCollWidth/totalCamRange
     
-    var camTable = $('#camTable').DataTable();
+    
 	
     //create range graph
     camTable.rows().eq(0).each( function ( index ) {
-        var row = camTable.row( index );
+    	var row = camTable.row( index );
         
         var data = row.data();
-        var rangeTdNode = $(row.node()).children('td:nth-child(4)')    	
-
-    	var rangeText = data[3]
-    	var camRange = data[3].split("-")
-    	camRange[0] = parseFloat(camRange[0])
-    	camRange[1] = parseFloat(camRange[1])
+        var rangeTdNode = $(row.node()).children('td:nth-child(4)')
+    	rangeTdNode.children(".rangeCell").remove();
     	
-    	if(data[11]=="silver"){
-    		textColor = "#2e2e2e"
+    	if($('.rangeHeader').width()>300){	    	    	
+	
+	    	var rangeText = data[3]
+	    	var camRange = data[3].split("-")
+	    	camRange[0] = parseFloat(camRange[0])
+	    	camRange[1] = parseFloat(camRange[1])
+	    	
+	    	if(data[11]=="silver"){
+	    		textColor = "#2e2e2e"
+	    	}
+	    	else
+	    		textColor = "inherit"
+	    	
+	    	rangeTdNode.text("")
+	    	html = ""
+	    	html +="<div class='rangeCell fistSizeDiv'> </div>"
+	    	html +="<div class='rangeCell mainSizeDiv' style='background-color:"+colors[data[11]]+";color:"+textColor+";' title='"+rangeText+"'><span>"+rangeText+"</span></div>"
+	    	html +="<div class='rangeCell lastSizeDiv'> </div>"	    	
+	    	rangeTdNode.attr("data-search", rangeText);
+	    	rangeTdNode.attr("data-order", rangeText); 
+	    	rangeTdNode.append(html)
+	    	
+	    	var fistSizeDivSize = (camRange[0]-minCamSize)*camRangeMMPerPx
+	    	var lastSizeDivSize = (maxCamSize-camRange[1])*camRangeMMPerPx
+	    	var mainSizeDivSize = rangeCollWidth-(fistSizeDivSize+lastSizeDivSize)		    	
+	    	
+	    	rangeTdNode.find('.fistSizeDiv:first').width(fistSizeDivSize+"%")
+	    	rangeTdNode.find('.lastSizeDiv:first').width(lastSizeDivSize+"%")
+	    	rangeTdNode.find('.mainSizeDiv:first').width(mainSizeDivSize+"%")
     	}
-    	else
-    		textColor = "inherit"
-    	
-    	rangeTdNode.text("")
-    	html = ""
-    	html +="<div class='rangeCell fistSizeDiv'> </div>"
-    	html +="<div class='rangeCell mainSizeDiv' style='background-color:"+colors[data[11]]+";color:"+textColor+";' title='"+rangeText+"'><span>"+rangeText+"</span></div>"
-    	html +="<div class='rangeCell lastSizeDiv'> </div>"	    	
-    	rangeTdNode.attr("data-search", rangeText);
-    	rangeTdNode.attr("data-order", rangeText); 
-    	rangeTdNode.append(html)
-    	
-    	var fistSizeDivSize = (camRange[0]-minCamSize)*camRangeMMPerPx
-    	var lastSizeDivSize = (maxCamSize-camRange[1])*camRangeMMPerPx
-    	var mainSizeDivSize = rangeCollWidth-(fistSizeDivSize+lastSizeDivSize)		    	
-    	
-    	rangeTdNode.find('.fistSizeDiv:first').width(fistSizeDivSize+"%")
-    	rangeTdNode.find('.lastSizeDiv:first').width(lastSizeDivSize+"%")
-    	rangeTdNode.find('.mainSizeDiv:first').width(mainSizeDivSize+"%")
+    	else{
+    		rangeTdNode.html(data[3])
+    	}
     });	
     
     //building range scale
     $(".scaleSection").remove();
-     
-    var numberOfPointsOnScale = 0
-
-    numberOfPointsOnScale = Math.ceil($('.rangeHeader').width()/100)
-    var rangeScaleSectionSize = totalCamRange/numberOfPointsOnScale   
     
-    for(var i = 0; i < numberOfPointsOnScale-1; i++) {
-    	var scaleNumber = Math.round((rangeScaleSectionSize*i)+minCamSize)
-    	var html = "<div style='width:"+100/numberOfPointsOnScale+"%' class='scaleSection'>"+scaleNumber+"mm</div>"
-    	
-    	$(".rangeScale").append(html);
+    if($('.rangeHeader').width()>300){
+	    var numberOfPointsOnScale = 0
+	
+	    numberOfPointsOnScale = Math.ceil($('.rangeHeader').width()/100)
+	    var rangeScaleSectionSize = totalCamRange/numberOfPointsOnScale   
+	    
+	    for(var i = 0; i < numberOfPointsOnScale-1; i++) {
+	    	var scaleNumber = Math.round((rangeScaleSectionSize*i)+minCamSize)
+	    	var html = "<div style='width:"+100/numberOfPointsOnScale+"%' class='scaleSection'>"+scaleNumber+"mm</div>"
+	    	
+	    	$(".rangeScale").append(html);
+	    }
+	    $(".rangeScale").append("<div class='scaleSection'>"+maxCamSize+"mm</div>");
     }
-    $(".rangeScale").append("<div class='scaleSection'>"+maxCamSize+"mm</div>");
     
     //adding tooltips
     $(function() {
