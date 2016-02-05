@@ -104,7 +104,14 @@
       	});
 		
 	    //auto resize text
+	    $('.mainSizeDiv').children('span').show()
 	    $('.mainSizeDiv').textfill({
+	    	minFontPixels : 1,
+	    	changeLineHeight : true,
+	    	debug: true,
+	        fail: function(failedDiv) {
+	        	$(failedDiv).children('span').hide()
+	        }
 	    });
 	    
 	}
@@ -296,7 +303,7 @@
   	                { orderData: [ 2, 1 , 0]},
   	                { "type": "size-range"},
   	                { },
-  	                { },
+  	                { "visible": false },
   	                { "visible": false },
   	                { "visible": false },
   	                { "visible": false },
@@ -408,9 +415,8 @@
 					.visible(true)
 					$('#showExtraData').text("Hide Extra Data")
 	   			}
+	   			buildRangeCollum()
 				
-
-				//camTable.columns.adjust().draw( false );
 	        } );
 	   		
 		});	    
