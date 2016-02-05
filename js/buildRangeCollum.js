@@ -14,7 +14,7 @@ function buildRangeCollum() {
 	var camTable = $('#camTable').DataTable();
 	
 	//get min and max cam sizes		
-	camTable.rows().eq(0).each( function ( index ) {
+	camTable.rows({search:'applied'}).eq(0).each( function ( index ) {
     	var row = camTable.row( index );        
         var data = row.data();
         
@@ -38,7 +38,7 @@ function buildRangeCollum() {
     
 	
     //create range graph
-    camTable.rows().eq(0).each( function ( index ) {
+    camTable.rows({search:'applied'}).eq(0).each( function ( index ) {
     	var row = camTable.row( index );
         
         var data = row.data();
