@@ -94,16 +94,21 @@ function defineEvents(){
 			camTable
 			.columns([5,6,7,8,9,10])
 			.visible(false)
-			$('#showExtraData').text("Show Extra Data")
+			$('#showExtraData').html("Show </br>Advanced Search")
 		}
 		else{
 			camTable
 			.columns([5,6,7,8,9,10])
 			.visible(true)
-			$('#showExtraData').text("Hide Extra Data")
+			$('#showExtraData').html("Hide </br>Advanced Search")
 		}
 		buildRangeCollum()
-		
+		$('#weightInput').parent().toggle()
+		$('#strengthInput').parent().toggle()
+		$('#stemCountInput').parent().toggle()
+		$('#axleCountInput').parent().toggle()
+		$('#extendableSlingInput').parent().toggle()
+		$('#offsetInput').parent().toggle()
 	} );
 	
 	$('#currencyInput').on( 'change', function () {

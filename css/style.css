@@ -13,20 +13,48 @@ body{
 .mainSizeDiv{
 	text-align:center;
 }
+.mainSizeDiv span{
+	
+}
 .scaleSection{
 	float:left;
 	text-align:center;
 }
+.ui-tooltip {
+    padding: 5px 10px;
+    color: #333333;
+    border-radius: 5px;
+    font: bold 16px  Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+}
 
 /*Search */
 .inputContainer{
-	margin: 5px 10px;
+	padding: 5px;
+	margin:10px;
 	float:left;
 	width:auto;
-	height:40px;
+	height:45px;
+	background-color:#474747;
+	border-color:#474747;
+	border-style:solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 .inputContainer label{
 	display:block;
+	width:auto;
+	margin-bottom:5px;
+}
+
+.inputContainer select,input{
+	width:auto;	
+}
+#showExtraData{
+	font-size:20px;
+	text-align:center;
 }
 
 /*Table*/
