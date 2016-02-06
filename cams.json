@@ -6,8 +6,8 @@
 		"range" : [13.6,22.5],
 		"strength" : 9,
 		"price" : {
-			"USD" : 50,
-			"GBP" : 0,
+			"USD" : 69.95,
+			"GBP" : 60,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -24,8 +24,8 @@
 		"range" : [16,26.7],
 		"strength" : 12,
 		"price" : {
-			"USD" : 60,
-			"GBP" : 0,
+			"USD" : 69.95,
+			"GBP" : 60,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -42,8 +42,8 @@
 		"range" : [20,33],
 		"strength" : 14,
 		"price" : {
-			"USD" : 70,
-			"GBP" : 0,
+			"USD" : 74.95,
+			"GBP" : 60,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -60,8 +60,8 @@
 		"range" : [24,41],
 		"strength" : 14,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 74.95,
+			"GBP" : 65,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -78,8 +78,8 @@
 		"range" : [29,50],
 		"strength" : 14,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 74.95,
+			"GBP" : 65,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -96,8 +96,8 @@
 		"range" : [38,64],
 		"strength" : 14,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 79.95,
+			"GBP" : 67.50,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -114,8 +114,8 @@
 		"range" : [50,85],
 		"strength" : 14,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 84.95,
+			"GBP" : 70,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -132,8 +132,8 @@
 		"range" : [68,114],
 		"strength" : 14,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 84.95,
+			"GBP" : 70,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -145,13 +145,13 @@
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "Friend",
+		"name" : "2016 Friend",
 		"variant" : "0.5",
 		"range" : [20.6,34.5],
 		"strength" : 12,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 64.95,
+			"GBP" : 55,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -163,13 +163,13 @@
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "Friend",
+		"name" : "2016 Friend",
 		"variant" : "0.75",
 		"range" : [25.8,43],
 		"strength" : 12,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 64.95,
+			"GBP" : 55,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -181,13 +181,13 @@
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "Friend",
+		"name" : "2016 Friend",
 		"variant" : "1",
 		"range" : [31.7,53.6],
 		"strength" : 12,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 69.95,
+			"GBP" : 55,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -199,13 +199,13 @@
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "Friend",
+		"name" : "2016 Friend",
 		"variant" : "2",
 		"range" : [41.5,69.3],
 		"strength" : 12,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 69.95,
+			"GBP" :55,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -217,13 +217,13 @@
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "Friend",
+		"name" : "2016 Friend",
 		"variant" : "3",
 		"range" : [52.7,88.0],
 		"strength" : 12,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 74.95,
+			"GBP" : 57,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -235,13 +235,13 @@
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "Friend",
+		"name" : "2016 Friend",
 		"variant" : "4",
 		"range" : [66.8,112.1],
 		"strength" : 12,
 		"price" : {
-			"USD" : 0,
-			"GBP" : 0,
+			"USD" : 74.95,
+			"GBP" : 57,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -259,7 +259,7 @@
 		"strength" : 14,
 		"price" : {
 			"USD" : 0,
-			"GBP" : 0,
+			"GBP" : 99.00,
 			"EUR" : 0
 		},
 		"offset" : "No",
@@ -277,7 +277,7 @@
 		"strength" : 14,
 		"price" : {
 			"USD" : 0,
-			"GBP" : 0,
+			"GBP" : 150.00,
 			"EUR" : 0
 		},
 		"offset" : "No",
