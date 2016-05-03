@@ -72,17 +72,24 @@ function defineEvents(){
 		.search( $(this).val() )
 	    .draw();
 	} );
+
+	$('#lobeCountInput').on( 'change', function () {
+		camTable
+			.column(9)
+			.search( $(this).val() )
+			.draw();
+	} );
 	
 	$('#extendableSlingInput').on( 'change', function () {
 		camTable
-		.column(9)
+		.column(10)
 		.search( $(this).val() )
 	    .draw();
 	} );
 	
 	$('#offsetInput').on( 'change', function () {
 		camTable
-		.column(10)
+		.column(11)
 		.search( $(this).val() )
 	    .draw();
 	} );
@@ -107,6 +114,7 @@ function defineEvents(){
 		$('#strengthInput').parent().toggle()
 		$('#stemCountInput').parent().toggle()
 		$('#axleCountInput').parent().toggle()
+		$('#lobeCountInput').parent().toggle()
 		$('#extendableSlingInput').parent().toggle()
 		$('#offsetInput').parent().toggle()
 	} );

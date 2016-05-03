@@ -45,6 +45,7 @@
  	                { "visible": false },
  	                { "visible": false },
  	                { "visible": false },
+		            { "visible": false },
  	               	{ "visible": false }
     		]
 	    });
@@ -67,7 +68,7 @@
 			<th>Manufacturer</th>
 			<th>Model</th>
 			<th>Name</th>
-			<th class="rangeHeader" width="100%"><span>Range</span>
+			<th class="rangeHeader" width="100%"><span>Range (mm)</span>
 				<div class="rangeScale"></div>
 			</th>
 			<th>Price</th>
@@ -75,6 +76,7 @@
 			<th>Strength</th>
 			<th>Stem Count</th>
 			<th>Axle Count</th>
+			<th>Lobe Count</th>
 			<th>Extendable Sling</th>
 			<th>Is Offset</th>
 		</tr>
@@ -86,13 +88,14 @@
 			<th>Name</th>
 			<th class="rangeHeader" width="100%">
 				<div class="rangeScale"></div>
-				<span>Range</span>
+				<span>Range  (mm)</span>
 			</th>
 			<th>Price</th>
 			<th>Weight</th>
 			<th>Strength</th>
 			<th>Stem Count</th>
 			<th>Axle Count</th>
+			<th>Lobe Count</th>
 			<th>Extendable Sling</th>
 			<th>Is Offset</th>
 		</tr>
@@ -155,7 +158,17 @@
 			<option value="1">1</option>
 			<option value="2">2</option>
 		</select>
-	</div>	
+	</div>
+	<div class="inputContainer" style="display: none;">
+		<label>Number of lobes:</label>
+		<select id="lobeCountInput">
+			<option value="">All</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
 	<div class="inputContainer" style="display: none;">
 		<label>Sling is extendable:</label>
 		<select id="extendableSlingInput">

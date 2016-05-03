@@ -23,6 +23,7 @@ function importData(){
                	cam["strength"]+"kN",
                	cam["stemNumber"],
                	cam["axleNumber"],
+		        cam["lobeNumber"],
                	cam["extendableSling"],
 				cam["offset"],
              	cam["color"]
