@@ -9,7 +9,10 @@ function buildRangeCollum() {
 	colors["purple"] = "#B15DA8"
 	colors["green"] = "#47954A"
 	colors["red"] = "#CD4843"
+	colors["yellow"] = "#DCDE46"
+	colors["black"] = "#000000"
 	colors["gold"] = "#E4B05D"
+	colors["orange"] = "#E4B05D"
 		
 	var camTable = $('#camTable').DataTable();
 	
@@ -53,7 +56,7 @@ function buildRangeCollum() {
 	    	camRange[0] = parseFloat(camRange[0])
 	    	camRange[1] = parseFloat(camRange[1])
 	    	
-	    	if(data[11]=="silver"){
+	    	if(data[12]=="silver" || data[12]=="yellow" ){
 	    		textColor = "#2e2e2e"
 	    	}
 	    	else
@@ -62,7 +65,7 @@ function buildRangeCollum() {
 	    	rangeTdNode.text("")
 	    	html = ""
 	    	html +="<div class='rangeCell fistSizeDiv'> </div>"
-	    	html +="<div class='rangeCell mainSizeDiv' style='background-color:"+colors[data[11]]+";color:"+textColor+";' title='"+rangeText+"'><span>"+rangeText+"</span></div>"
+	    	html +="<div class='rangeCell mainSizeDiv' style='background-color:"+colors[data[12]]+";color:"+textColor+";' title='"+rangeText+"'><span>"+rangeText+"</span></div>"
 	    	html +="<div class='rangeCell lastSizeDiv'> </div>"	    	
 	    	rangeTdNode.attr("data-search", rangeText);
 	    	rangeTdNode.attr("data-order", rangeText); 
@@ -102,7 +105,20 @@ function buildRangeCollum() {
     
     //adding tooltips
     $(function() {
-        $('.mainSizeDiv').tooltip();
+        $('.mainSizeDiv').tooltip({
+	        content: function(){
+		        if ($(this).text() != ""){
+			        var range = $(this).text().split("-");
+			        var minInch = parseFloat(range[0]*0.0393701).toFixed(2);
+			        var maxInch = parseFloat(range[1]*0.0393701).toFixed(2);
+
+					return range[0]+" - "+range[1]+" mm</br>" +minInch+" - "+maxInch+" Inches"
+
+		        }else{
+			        return "";
+		        }
+	        }
+        });
   	});
 	
     //auto resize text
