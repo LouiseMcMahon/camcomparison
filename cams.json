@@ -987,6 +987,766 @@
 		"stemNumber" : 1,
 		"axleNumber" : 1,
 		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "TCU",
+		"variant" : "000",
+		"range" : [6.6,10.16],
+		"strength" : 2.5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 26,
+		"color" : "green",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "TCU",
+		"variant" : "00",
+		"range" : [8.5,12],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 41,
+		"color" : "silver",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "TCU",
+		"variant" : "0",
+		"range" : [10,15],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 43,
+		"color" : "purple",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "TCU",
+		"variant" : "1",
+		"range" : [12.5,18],
+		"strength" : 8,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 50,
+		"color" : "blue",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "TCU",
+		"variant" : "2",
+		"range" : [15.5,22.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 57,
+		"color" : "yellow",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "TCU",
+		"variant" : "3",
+		"range" : [18.5,26.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 59,
+		"color" : "orange",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "TCU",
+		"variant" : "4",
+		"range" : [23.5,33.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 68,
+		"color" : "red",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "00",
+		"range" : [8.5,12],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 45,
+		"color" : "grey",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "0",
+		"range" : [10,15],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 48,
+		"color" : "purple",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "1",
+		"range" : [12.5,18],
+		"strength" : 8,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 54,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "2",
+		"range" : [15.5,22.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 64,
+		"color" : "yellow",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "3",
+		"range" : [18.5,26.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 68,
+		"color" : "orange",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "4",
+		"range" : [23.5,33.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 77,
+		"color" : "red",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "5",
+		"range" : [28,39.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 86,
+		"color" : "black",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "6",
+		"range" : [32.5,48],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 98,
+		"color" : "green",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "7",
+		"range" : [40,57.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 127,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Power Cam",
+		"variant" : "8",
+		"range" : [48.5,71.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 150,
+		"color" : "purple",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Supercam",
+		"variant" : "Small",
+		"range" : [42,63.4],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 184,
+		"color" : "grey",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Supercam",
+		"variant" : "Medium",
+		"range" : [52.5,91.5],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 255,
+		"color" : "red",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Supercam",
+		"variant" : "Large",
+		"range" : [66.5,118.5],
+		"strength" : 12,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 312,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset TCU",
+		"variant" : "00/0",
+		"range" : [8.6,13.2],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 45,
+		"color" : "grey",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset TCU",
+		"variant" : "0/1",
+		"range" : [11.1,16.5],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 47,
+		"color" : "purple",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset TCU",
+		"variant" : "1/2",
+		"range" : [14.4,20.3],
+		"strength" : 8,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 52,
+		"color" : "blue",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset TCU",
+		"variant" : "2/3",
+		"range" : [17,24.6],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 59,
+		"color" : "yellow",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset TCU",
+		"variant" : "3/4",
+		"range" : [21.5,30.2],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 63,
+		"color" : "orange",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset Master Cam",
+		"variant" : "00/0",
+		"range" : [8.6,13.2],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 63,
+		"color" : "grey",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset Master Cam",
+		"variant" : "0/1",
+		"range" : [11.1,16.5],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 66,
+		"color" : "purple",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset Master Cam",
+		"variant" : "1/2",
+		"range" : [14.4,20.3],
+		"strength" : 8,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 70,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset Master Cam",
+		"variant" : "2/3",
+		"range" : [17,24.6],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 79,
+		"color" : "yellow",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset Master Cam",
+		"variant" : "3/4",
+		"range" : [21.5,30.2],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 87,
+		"color" : "orange",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Offset Master Cam",
+		"variant" : "4/5",
+		"range" : [28,39.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "Yes",
+		"weight" : 94,
+		"color" : "red",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Fat Cam",
+		"variant" : "2",
+		"range" : [15.5,22.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 72,
+		"color" : "yellow",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Fat Cam",
+		"variant" : "3",
+		"range" : [18.5,26.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 75,
+		"color" : "orange",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Fat Cam",
+		"variant" : "4",
+		"range" : [23.5,33.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 84,
+		"color" : "red",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Fat Cam",
+		"variant" : "5",
+		"range" : [28,39.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 98,
+		"color" : "black",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Fat Cam",
+		"variant" : "6",
+		"range" : [32.5,48],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 111,
+		"color" : "green",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Fat Cam",
+		"variant" : "7",
+		"range" : [40.5,57.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 136,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Fat Cam",
+		"variant" : "8",
+		"range" : [48.5,71.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 154,
+		"color" : "purple",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Valley Giant",
+		"name" : "Valley Giant",
+		"variant" : "VG9",
+		"range" : [145,229],
+		"strength" : 17,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 880,
+		"color" : "grey",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Valley Giant",
+		"name" : "Valley Giant",
+		"variant" : "VG12",
+		"range" : [188,305],
+		"strength" : 9,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 990,
+		"color" : "grey",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
 	}
 ]
 

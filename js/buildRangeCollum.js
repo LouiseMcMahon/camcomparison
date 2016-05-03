@@ -1,18 +1,19 @@
 function buildRangeCollum() {
 		
-	var minCamSize = false
-    var maxCamSize = false
+	var minCamSize = false;
+    var maxCamSize = false;
     
-    var colors = []
+    var colors = [];
 	colors["blue"] = "#216EA6"
 	colors["silver"] = "#E9E4E0"
+	colors["grey"] = colors["silver"]
 	colors["purple"] = "#B15DA8"
 	colors["green"] = "#47954A"
 	colors["red"] = "#CD4843"
 	colors["yellow"] = "#DCDE46"
 	colors["black"] = "#000000"
 	colors["gold"] = "#E4B05D"
-	colors["orange"] = "#E4B05D"
+	colors["orange"] = colors["gold"]
 		
 	var camTable = $('#camTable').DataTable();
 	
@@ -55,8 +56,9 @@ function buildRangeCollum() {
 	    	var camRange = data[3].split("-")
 	    	camRange[0] = parseFloat(camRange[0])
 	    	camRange[1] = parseFloat(camRange[1])
-	    	
-	    	if(data[12]=="silver" || data[12]=="yellow" ){
+
+		    //color text black if necessary
+	    	if(data[12]=="silver" || data[12]=="grey" || data[12]=="yellow" || data[12]=="gold" || data[12]=="orange" ){
 	    		textColor = "#2e2e2e"
 	    	}
 	    	else
