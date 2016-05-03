@@ -46,6 +46,14 @@ function defineEvents(){
 	$('#rangeInput').keyup( function() {
 		camTable.draw();
 	} );
+
+	$('#rangeMin').keyup( function() {
+		camTable.draw();
+	} );
+
+	$('#rangeMax').keyup( function() {
+		camTable.draw();
+	} );
 	
 	$('#priceInput').keyup( function() {
 		camTable.draw();

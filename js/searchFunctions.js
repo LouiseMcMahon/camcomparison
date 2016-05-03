@@ -25,49 +25,97 @@ function declareCustomSearchFunctions(){
 		    }
 		} );
 	
-	//range search function
+		//range search function
 		$.fn.dataTable.ext.search.push(
-	    function( settings, data, dataIndex ) {
-	        var rangeContains =  $('#rangeInput').val() 	       	
-	 		
-	        if (!rangeContains){
-	        	return true;
-	        }
-	        rangeContains = parseInt(rangeContains)
-	        if(!$.isNumeric( rangeContains )){
-	        	return true;
-	        }			    
-	        
-	    	var camRange =  data[3].split("-")
-	    	camRange[0] = parseFloat(camRange[0])
-	    	camRange[1] = parseFloat(camRange[1])
-	    	
-	    	if (camRange[0] <= rangeContains && camRange[1] >= rangeContains){
-	    		return true;
-	    	}
-	    	return false;			        
-	    }
-	);
+		    function( settings, data, dataIndex ) {
+		        var rangeContains =  $('#rangeInput').val()
+
+		        if (!rangeContains){
+		            return true;
+		        }
+		        rangeContains = parseInt(rangeContains)
+		        if(!$.isNumeric( rangeContains )){
+		            return true;
+		        }
+
+		        var camRange =  data[3].split("-")
+		        camRange[0] = parseFloat(camRange[0])
+		        camRange[1] = parseFloat(camRange[1])
+
+		        if (camRange[0] <= rangeContains && camRange[1] >= rangeContains){
+		            return true;
+		        }
+		        return false;
+		    }
+		);
+
+		//range min
+		$.fn.dataTable.ext.search.push(
+			function( settings, data, dataIndex ) {
+				var rangeMin =  $('#rangeMin').val()
+
+				if (!rangeMin){
+					return true;
+				}
+				rangeMin = parseInt(rangeMin)
+				if(!$.isNumeric( rangeMin )){
+					return true;
+				}
+
+				var camRange =  data[3].split("-")
+				camRange[0] = parseFloat(camRange[0])
+				camRange[1] = parseFloat(camRange[1])
+
+				if (camRange[0] >= rangeMin){
+					return true;
+				}
+				return false;
+			}
+		);
+
+		//range max
+		$.fn.dataTable.ext.search.push(
+			function( settings, data, dataIndex ) {
+				var rangeMax =  $('#rangeMax').val()
+
+				if (!rangeMax){
+					return true;
+				}
+				rangeMax = parseInt(rangeMax)
+				if(!$.isNumeric( rangeMax )){
+					return true;
+				}
+
+				var camRange =  data[3].split("-")
+				camRange[0] = parseFloat(camRange[0])
+				camRange[1] = parseFloat(camRange[1])
+
+				if (camRange[1] <= rangeMax){
+					return true;
+				}
+				return false;
+			}
+		);
 	
 		//price search function
 		$.fn.dataTable.ext.search.push(
-	    function( settings, data, dataIndex ) {
-	        var lessThanPrice =  $('#priceInput').val() 	       	
-	 		
-	        if (!lessThanPrice){
-	        	return true;
-	        }
-	        lessThanPrice = parseInt(lessThanPrice)
-	        if(!$.isNumeric( lessThanPrice )){
-	        	return true;
-	        }		        
-	    	
-	    	if (data[4].replace(/\D/g,'') <= lessThanPrice){
-	    		return true;
-	    	}
-	    	return false;			        
-		}
-	);
+		    function( settings, data, dataIndex ) {
+		        var lessThanPrice =  $('#priceInput').val()
+
+		        if (!lessThanPrice){
+		            return true;
+		        }
+		        lessThanPrice = parseInt(lessThanPrice)
+		        if(!$.isNumeric( lessThanPrice )){
+		            return true;
+		        }
+
+		        if (data[4].replace(/\D/g,'') <= lessThanPrice){
+		            return true;
+		        }
+		        return false;
+			}
+		);
 		
 		//weight search function
 		$.fn.dataTable.ext.search.push(
