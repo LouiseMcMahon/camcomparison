@@ -15,7 +15,8 @@
 		"color" : "blue",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "Yes"		
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "DMM",
@@ -33,7 +34,8 @@
 		"color" : "silver",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "DMM",
@@ -51,7 +53,8 @@
 		"color" : "purple",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "DMM",
@@ -69,7 +72,8 @@
 		"color" : "green",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "DMM",
@@ -87,7 +91,8 @@
 		"color" : "red",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "DMM",
@@ -105,7 +110,8 @@
 		"color" : "gold",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "DMM",
@@ -123,7 +129,8 @@
 		"color" : "blue",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "DMM",
@@ -141,11 +148,12 @@
 		"color" : "silver",
 		"stemNumber" : 1,
 		"axleNumber" : 2,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "2016 Friend",
+		"name" : "Friend",
 		"variant" : "0.5",
 		"range" : [20.6,34.5],
 		"strength" : 12,
@@ -159,11 +167,12 @@
 		"color" : "purple",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "2016 Friend",
+		"name" : "Friend",
 		"variant" : "0.75",
 		"range" : [25.8,43],
 		"strength" : 12,
@@ -177,11 +186,12 @@
 		"color" : "green",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "2016 Friend",
+		"name" : "Friend",
 		"variant" : "1",
 		"range" : [31.7,53.6],
 		"strength" : 12,
@@ -195,11 +205,12 @@
 		"color" : "red",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "2016 Friend",
+		"name" : "Friend",
 		"variant" : "2",
 		"range" : [41.5,69.3],
 		"strength" : 12,
@@ -213,11 +224,12 @@
 		"color" : "gold",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "2016 Friend",
+		"name" : "Friend",
 		"variant" : "3",
 		"range" : [52.7,88.0],
 		"strength" : 12,
@@ -231,11 +243,12 @@
 		"color" : "blue",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "Wild Country",
-		"name" : "2016 Friend",
+		"name" : "Friend",
 		"variant" : "4",
 		"range" : [66.8,112.1],
 		"strength" : 12,
@@ -249,7 +262,8 @@
 		"color" : "gold",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "Yes"			
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -267,7 +281,8 @@
 		"color" : "red",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "No"			
+		"extendableSling" : "No",
+		"lobeNumber" : 4
 	},
 	{
 		"manufacturer" : "Wild Country",
@@ -285,7 +300,693 @@
 		"color" : "green",
 		"stemNumber" : 1,
 		"axleNumber" : 1,
-		"extendableSling" : "No"			
+		"extendableSling" : "No",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Demon",
+		"variant" : "0",
+		"range" : [13,19],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 84,
+		"color" : "blue",
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Demon",
+		"variant" : "0.5",
+		"range" : [17,24],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 90,
+		"color" : "red",
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Demon",
+		"variant" : "1",
+		"range" : [19,29],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 97,
+		"color" : "gold",
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Demon",
+		"variant" : "1.5",
+		"range" : [23,35],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 101,
+		"color" : "silver",
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Demon",
+		"variant" : "2",
+		"range" : [29,44],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 113,
+		"color" : "red",
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Demon",
+		"variant" : "2.5",
+		"range" : [33,55],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 127,
+		"color" : "gold",
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Demon",
+		"variant" : "3",
+		"range" : [43,66],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 154,
+		"color" : "purple",
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Demon",
+		"variant" : "3.5",
+		"range" : [51,82],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 181,
+		"color" : "blue",
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "Demon",
+		"variant" : "4",
+		"range" : [64,100],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 221,
+		"color" : "silver",
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "0",
+		"range" : [13,19],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 75,
+		"color" : "blue",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "0.5",
+		"range" : [17,24],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 80,
+		"color" : "red",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "1",
+		"range" : [19,29],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 93,
+		"color" : "gold",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "1.25",
+		"range" : [21,33],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 96,
+		"color" : "purple",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "1.5",
+		"range" : [23,35],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 97,
+		"color" : "silver",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "1.75",
+		"range" : [25,41],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 99,
+		"color" : "green",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "2",
+		"range" : [29,44],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 110,
+		"color" : "red",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "2.5",
+		"range" : [33,55],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 123,
+		"color" : "gold",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "3",
+		"range" : [43,66],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 151,
+		"color" : "purple",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "3.5",
+		"range" : [51,82],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 185,
+		"color" : "blue",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "4CU",
+		"variant" : "4",
+		"range" : [64,100],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 224,
+		"color" : "silver",
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes",
+		"lobeNumber" : 4
+
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "3CU",
+		"variant" : "0",
+		"range" : [13,19],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 74,
+		"color" : "blue",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes"
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "3CU",
+		"variant" : "0.5",
+		"range" : [17,24],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 80,
+		"color" : "red",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes"
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "3CU",
+		"variant" : "1",
+		"range" : [19,29],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 84,
+		"color" : "gold",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes"
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "3CU",
+		"variant" : "1.25",
+		"range" : [21,33],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 87,
+		"color" : "purple",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes"
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "3CU",
+		"variant" : "1.5",
+		"range" : [23,35],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 88,
+		"color" : "silver",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes"
+	},
+	{
+		"manufacturer" : "DMM",
+		"name" : "3CU",
+		"variant" : "1.75",
+		"range" : [25,41],
+		"strength" : 14,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 90,
+		"color" : "green",
+		"lobeNumber" : 3,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "Yes"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "00",
+		"range" : [8.5,12],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 45,
+		"color" : "silver",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "0",
+		"range" : [10,15],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 45,
+		"color" : "purple",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "1",
+		"range" : [12.5,18],
+		"strength" : 8,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 52,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "2",
+		"range" : [15.5,22.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 55,
+		"color" : "yellow",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "3",
+		"range" : [18.5,26.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 65,
+		"color" : "orange",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "4",
+		"range" : [23.5,33.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 75,
+		"color" : "red",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "5",
+		"range" : [28,39.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 85,
+		"color" : "black",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "6",
+		"range" : [32.5,48],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 96,
+		"color" : "green",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "7",
+		"range" : [40,57.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 112,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Metolius",
+		"name" : "Master Cam",
+		"variant" : "8",
+		"range" : [48.5,71.5],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 129,
+		"color" : "purple",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
 	}
 ]
 
