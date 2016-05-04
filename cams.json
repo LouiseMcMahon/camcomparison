@@ -1730,10 +1730,48 @@
 		"extendableSling" : "No"
 	},
 	{
-		"manufacturer" : "Valley Giant",
-		"name" : "Valley Giant",
-		"variant" : "VG12",
-		"range" : [188,305],
+		"manufacturer" : "Totem",
+		"name" : "Totem Cam",
+		"variant" : "0.50",
+		"range" : [11.7,18.9],
+		"strength" : 6,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 69,
+		"color" : "black",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Totem Cam",
+		"variant" : "0.65",
+		"range" : [13.8,22.5],
+		"strength" : 8,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 75,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Totem Cam",
+		"variant" : "0.80",
+		"range" : [17,27.7],
 		"strength" : 9,
 		"price" : {
 			"USD" : 0,
@@ -1741,10 +1779,219 @@
 			"EUR" : 0
 		},
 		"offset" : "No",
-		"weight" : 990,
-		"color" : "grey",
+		"weight" : 83,
+		"color" : "yellow",
 		"lobeNumber" : 4,
 		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Totem Cam",
+		"variant" : "1.00",
+		"range" : [20.9,34.2],
+		"strength" : 10,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 95,
+		"color" : "purple",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Totem Cam",
+		"variant" : "1.25",
+		"range" : [25.7,42.3],
+		"strength" : 13,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 109,
+		"color" : "green",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Totem Cam",
+		"variant" : "1.50",
+		"range" : [31.6,52.2],
+		"strength" :13 ,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 132,
+		"color" : "red",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Totem Cam",
+		"variant" : "1.80",
+		"range" : [39.7,64.2],
+		"strength" : 13,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 144,
+		"color" : "orange",
+		"lobeNumber" : 4,
+		"stemNumber" : 2,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Basic",
+		"variant" : "0.5",
+		"range" : [11.2,17.4],
+		"strength" :5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 56,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Basic",
+		"variant" : "0.60HY",
+		"range" : [13.6,17.4],
+		"strength" : 5,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 58,
+		"color" : "blue",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Basic",
+		"variant" : "0.65",
+		"range" : [13.6,21.4],
+		"strength" : 7,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 60,
+		"color" : "green",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Basic",
+		"variant" : "0.70HY",
+		"range" : [16.6,21.4],
+		"strength" : 7,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 62,
+		"color" : "green",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Basic",
+		"variant" : "0.75",
+		"range" : [16.6,26.1],
+		"strength" : 9,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 68,
+		"color" : "yellow",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Basic",
+		"variant" : "0.85HY",
+		"range" : [19.9,26.1],
+		"strength" : 9,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 70,
+		"color" : "yellow",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
+		"axleNumber" : 1,
+		"extendableSling" : "No"
+	},
+	{
+		"manufacturer" : "Totem",
+		"name" : "Basic",
+		"variant" : "0.95",
+		"range" : [19.9,31.6],
+		"strength" : 11,
+		"price" : {
+			"USD" : 0,
+			"GBP" : 0,
+			"EUR" : 0
+		},
+		"offset" : "No",
+		"weight" : 72,
+		"color" : "red",
+		"lobeNumber" : 4,
+		"stemNumber" : 1,
 		"axleNumber" : 1,
 		"extendableSling" : "No"
 	}
